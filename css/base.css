@@ -1,0 +1,27 @@
+#ss-wrapper {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.ss-wrapper-andada {
+  font-family: 'andada', serif;
+}
+
+.ss-wrapper-lato {
+  font-family: 'lato', sans-serif;
+}
+
+.ss-wrapper-pt-serif {
+  font-family: 'pt serif', sans-serif;
+}
+
+.ss-wrapper-pt-sans {
+  font-family: 'pt sans', sans-serif;
+}
+
+.ss-wrapper p {
+
+}
