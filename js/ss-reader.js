@@ -21,3 +21,10 @@ var ssReader = Class({
     $("#ss-wrapper").removeClass().addClass("ss-wrapper, ss-wrapper-"+fontName);
   }
 });
+
+$(function(){
+  $("code").each(function(i){
+
+    $(this).append($("<textarea/>"));
+  });
+});
