@@ -7,13 +7,25 @@
 
   <script type="text/javascript" src="js/jsface.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/rangy-core.js"></script>
+  <script type="text/javascript" src="js/rangy-highlighter.js"></script>
+  <script type="text/javascript" src="js/rangy-classapplier.js"></script>
+  <script type="text/javascript" src="js/rangy-serializer.js"></script>
   <script type="text/javascript" src="js/ss-reader.js"></script>
 
 </head>
 
 <body>
-<div id="ss-wrapper" class="ss-wrapper ss-wrapper-andada">
+<div id="ss-wrapper">
+  <div id="ss-wrapper-font" class="ss-wrapper-andada">
+  <div id="ss-wrapper-size" class="ss-wrapper-medium">
+  <div id="ss-wrapper-theme" class="ss-wrapper-sepia">
 
+    {{content}}
+
+  </div>
+  </div>
+  </div>
 </div>
 </body>
 </html>
