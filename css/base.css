@@ -54,18 +54,18 @@ html, body {padding:0; margin: 0}
   color: #5b4636;
 }
 
-.ss-wrapper-sepia code, .ss-wrapper-sepia blockquote {
-  background-color: #efebe4;
-}
+  .ss-wrapper-sepia code, .ss-wrapper-sepia blockquote {
+    background-color: #efebe4;
+  }
 
 .ss-wrapper-dark {
   background-color: #292929;
   color: #ccc;
 }
 
-.ss-wrapper-dark code, .ss-wrapper-dark blockquote {
-  background-color: #525252;
-}
+  .ss-wrapper-dark code, .ss-wrapper-dark blockquote {
+    background-color: #525252;
+  }
 
 .ss-wrapper p {
   padding: 0 0 10px 0;
