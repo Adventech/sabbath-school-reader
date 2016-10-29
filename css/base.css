@@ -1,6 +1,10 @@
-html, body {padding:0; margin: 0}
+html, body {
+  padding:0;
+  margin: 0;
+}
 
-#ss-wrapper {
+
+#ss-wrapper, #ss-wrapper-font, #ss-wrapper-size, #ss-wrapper-theme {
 
 }
 
@@ -26,22 +30,27 @@ html, body {padding:0; margin: 0}
 
 .ss-wrapper-tiny {
   font-size: .8em;
+  line-height: 1.2em;
 }
 
 .ss-wrapper-small {
   font-size: 1em;
+  line-height: 1.4em;
 }
 
 .ss-wrapper-medium {
   font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 .ss-wrapper-large {
   font-size: 1.4em;
+  line-height: 1.6em;
 }
 
 .ss-wrapper-huge {
   font-size: 1.6em;
+  line-height: 1.7em;
 }
 
 .ss-wrapper-light {
@@ -91,6 +100,15 @@ html, body {padding:0; margin: 0}
   color: #222 !important;
 }
 
+.verse {
+  border-bottom: 1px solid #16a365;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 0.2em;
+}
+
 blockquote {
   background: #f9f9f9;
   border-left: 5px solid #ccc;
@@ -115,7 +133,6 @@ code {
 
 code .textarea {
   font-weight: normal;
-  border-radius: 3px;
   color: #222;
   margin: 20px -20px -20px;
   display: block;
