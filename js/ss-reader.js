@@ -133,31 +133,31 @@ $(function(){
         urlBase: "sabbath-school://",
 
         request: function(data){
-            window.location = this.urlBase + "/" + data;
+            window.location = this.urlBase + data;
         },
 
         onReceiveHighlights: function(highlights){
-            this.request("/highlights/" + highlights);
+            this.request("highlights/" + highlights);
         },
 
         onVerseClick: function(verse){
-            this.request("/verse/" + verse);
+            this.request("verse/" + verse);
         },
 
         onCommentsClick: function(comments){
-            this.request("/comments/" + verse);
+            this.request("comments/" + comments);
         },
 
         onCopy: function(text){
-            this.request("/copy/" + verse);
+            this.request("copy/" + text);
         },
 
         onShare: function(text){
-            this.request("/share/" + verse);
+            this.request("share/" + text);
         },
 
         onSearch: function(text){
-            this.request("/search/" + verse);
+            this.request("search/" + text);
         }
     });
   }
