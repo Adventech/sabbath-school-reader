@@ -82,7 +82,8 @@ $(function(){
 
     setComment: function(comment, inputId){
       $("#"+inputId).val(ssReader.base64decode(comment));
-      $("#"+inputId).trigger("input");
+      $("#"+inputId).css({'height':'auto','overflow-y':'hidden'}).height($("#"+inputId).scrollHeight);
+      $("#"+inputId).next().css({'height':'auto','overflow-y':'hidden'}).height($("#"+inputId).height());
     },
 
     highlightSelection: function(color){
@@ -138,6 +139,10 @@ $(function(){
         window.location = this.urlBase + data;
       },
 
+      onReady: function(){
+        this.request("?ready=true");
+      },
+
       onReceiveHighlights: function(highlights){
         this.request("?highlights=" + highlights);
       },
@@ -146,8 +151,8 @@ $(function(){
         this.request("?verse=" + verse);
       },
 
-      onCommentsClick: function(comments){
-        this.request("?comments=" + comments);
+      onCommentsClick: function(comments, elementId){
+        this.request("?comment=" + comment + "&elementId=" + elementId);
       },
 
       onCopy: function(text){
@@ -162,6 +167,7 @@ $(function(){
         this.request("?search=" + text);
       }
     });
+    SSBridge.onReady();
   }
 
   if(typeof ssReader !== "undefined"){ssReader.init();}
