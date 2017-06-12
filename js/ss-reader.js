@@ -1,5 +1,8 @@
 timeout = null;
 
+var userAgent = window.navigator.userAgent.toLowerCase(),
+    iOS = /iphone|ipod|ipad/.test(userAgent);
+
 $(function(){
   window.ssReader = Class({
     $singleton: true,
@@ -130,7 +133,7 @@ $(function(){
     }
   });
 
-  if (typeof SSBridge == "undefined"){
+  if (iOS){
     window.SSBridge = Class({
       $singleton: true,
       urlBase: "sabbath-school://ss",
@@ -170,7 +173,9 @@ $(function(){
     SSBridge.onReady();
   }
 
-  if(typeof ssReader !== "undefined"){ssReader.init();}
+  if(typeof ssReader !== "undefined"){
+    ssReader.init();
+  }
 
   $(".verse").click(function(){
     SSBridge.onVerseClick(ssReader.base64encode($(this).attr("verse")));
