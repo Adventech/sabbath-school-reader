@@ -12,19 +12,19 @@ html, body {
 }
 
 .ss-wrapper-andada {
-  font-family: 'andada', serif;
+  font-family: 'andada', 'Lora', serif;
 }
 
 .ss-wrapper-lato {
-  font-family: 'lato', sans-serif;
+  font-family: 'lato', 'Lato', sans-serif;
 }
 
 .ss-wrapper-pt-serif {
-  font-family: 'pt serif', sans-serif;
+  font-family: 'pt serif', 'PTSerif', sans-serif;
 }
 
 .ss-wrapper-pt-sans {
-  font-family: 'pt sans', sans-serif;
+  font-family: 'pt sans', 'PTSans', sans-serif;
 }
 
 .ss-wrapper-tiny {
@@ -124,21 +124,33 @@ html, body {
 .highlight_orange {
   background-color: #F59569;
   color: #222 !important;
+  border-radius: 5px;
+  margin: 0 -3px;
+  padding: 0 3px;
 }
 
 .highlight_yellow {
   background-color: #FFF3A0;
   color: #222 !important;
+  border-radius: 5px;
+  margin: 0 -3px;
+  padding: 0 3px;
 }
 
 .highlight_green {
   background-color: #63D724;
   color: #222 !important;
+  border-radius: 5px;
+  margin: 0 -3px;
+  padding: 0 3px;
 }
 
 .highlight_blue {
   background-color: #69D2F5;
   color: #222 !important;
+  border-radius: 5px;
+  margin: 0 -3px;
+  padding: 0 3px;
 }
 
 a.verse {

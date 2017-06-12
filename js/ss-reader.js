@@ -94,7 +94,7 @@ $(function(){
       } catch(err){}
     },
 
-    unHighlightSelection: function(color){
+    unHighlightSelection: function(){
       try {
         this.highlighter.unhighlightSelection();
         SSBridge.onReceiveHighlights(this.getHighlights());
