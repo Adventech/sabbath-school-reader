@@ -192,8 +192,8 @@ $(function(){
       }
       timeout = setTimeout(function () {
         SSBridge.onCommentsClick(
-          ssReader.base64encode($(that).val()),
-          $(that).attr("id")
+            ssReader.base64encode($(that).val()),
+            $(that).attr("id")
         );
       }, 1000);
     });
