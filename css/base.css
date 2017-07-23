@@ -101,7 +101,7 @@ html, body {
   background-color: #212325;
 }
 
-.ss-wrapper-dark a.verse {
+.ss-wrapper-dark a {
   border-bottom: 1px solid #ccc;
 }
 
@@ -155,7 +155,7 @@ html, body {
   padding: 0 3px;
 }
 
-a.verse {
+a {
   border-bottom: 1px solid #16a365;
   cursor: pointer;
   font-weight: bold;
@@ -222,4 +222,8 @@ code {
 
 h3 {
   font-variant: small-caps;
+}
+
+sup {
+  font-style: italic;
 }
