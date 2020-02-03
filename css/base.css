@@ -244,6 +244,8 @@ sup {
 }
 
 table {
+  border-collapse: collapse;
+  border-spacing: 0;
   padding: 0;
   display: block;
   overflow: auto;
