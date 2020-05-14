@@ -176,6 +176,7 @@ a {
   text-decoration: none;
   padding-bottom: 0.2em;
   color: #222;
+  word-break: break-all;
 }
 
 blockquote {
@@ -249,7 +250,7 @@ table {
   padding: 0;
   display: block;
   overflow: auto;
-  width: 100%;
+  width: 100% !important;
   margin: 15px 0;
 }
 table tr {
