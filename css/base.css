@@ -176,6 +176,9 @@ a {
   text-decoration: none;
   padding-bottom: 0.2em;
   color: #222;
+}
+
+a:not(.verse) {
   word-break: break-all;
 }
 
