@@ -166,11 +166,11 @@ html, body {
 }
 
 a.highlight_underline {
-  border-bottom: 2px solid #16a365;
+  border-bottom: 2px solid #005EC7;
 }
 
 a {
-  border-bottom: 1px solid #16a365;
+  border-bottom: 1px solid #005EC7;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
