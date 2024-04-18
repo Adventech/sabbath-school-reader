@@ -225,12 +225,14 @@ $(function(){
   });
 
   $("div.ss-donation-appeal-title").click(function (){
-    if ($(".ss-donation-appeal-text").is(":visible")) {
-      $(".ss-donation-appeal-title").removeClass("ss-donation-appeal-title-expanded");
-      $(".ss-donation-appeal-text").hide();
+    var content = $(this).parent().find(".ss-donation-appeal-text")
+
+    if (content.is(":visible")) {
+      $(this).removeClass("ss-donation-appeal-title-expanded");
+      content.hide();
     } else {
-      $(".ss-donation-appeal-title").addClass("ss-donation-appeal-title-expanded");
-      $(".ss-donation-appeal-text").show();
+      $(this).addClass("ss-donation-appeal-title-expanded");
+      content.show();
     }
   });
 
